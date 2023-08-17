@@ -1,4 +1,4 @@
-import { getDiscountFormatFunction } from "./getDiscountFormat..js";
+import { getDiscountFormatFunction } from "./getDiscountFormat.js";
 
 it("Should get empty array if no product", () => {
   const getDiscountPrice = getDiscountFormatFunction();
