@@ -1,13 +1,13 @@
 import database from "./database.json";
-import { getDiscountPriceFunction } from "./getDiscountPrice.js";
+import { getDiscountFormatFunction } from "./getDiscountFormat.js";
 import { getDiscountOneFunction } from "./getDiscountOne.js";
 import { getDiscountTwoFunction } from "./getDiscountTwo.js";
 
 export const checkout = (productIDs = [], products = database.products) => {
   const getDiscountPrice = [
-    getDiscountPriceFunction,
+    getDiscountFormatFunction,
     getDiscountOneFunction,
-    getDiscountTwoFunction
+    getDiscountTwoFunction,
   ].reduceRight(
     (prev, cb) => cb(prev),
     (cb) => cb
