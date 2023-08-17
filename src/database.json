@@ -1,0 +1,24 @@
+{
+  "products": {
+    "001": {
+      "name": "Cola",
+      "price": 45
+    },
+    "002": {
+      "name": "Royal",
+      "price": 50
+    },
+    "003": {
+      "name": "Sprite",
+      "price": 55
+    },
+    "004": {
+      "name": "Fanta",
+      "price": 60
+    },
+    "005": {
+      "name": "Lemon Tea",
+      "price": 35
+    }
+  }
+}
