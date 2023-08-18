@@ -32,16 +32,16 @@ Then:
     {
       id: "100",
       price: 100,
-      activated: false
-    }
+      activated: false,
+    },
   ];
 
   const expected = [
     {
       id: "100",
       price: 100,
-      activated: false
-    }
+      activated: false,
+    },
   ];
 
   expect(getDiscountOne(example)).toStrictEqual(expected);
@@ -82,26 +82,26 @@ Then:
     {
       id: "100",
       price: 100,
-      activated: false
+      activated: false,
     },
     {
       id: "200",
       price: 200,
-      activated: false
-    }
+      activated: false,
+    },
   ];
 
   const expected = [
     {
       id: "100",
       price: 100,
-      activated: false
+      activated: false,
     },
     {
       id: "200",
       price: 200,
-      activated: false
-    }
+      activated: false,
+    },
   ];
 
   expect(getDiscountOne(example)).toStrictEqual(expected);
@@ -142,26 +142,26 @@ Then:
     {
       id: "100",
       price: 100,
-      activated: false
+      activated: false,
     },
     {
       id: "100",
       price: 100,
-      activated: false
-    }
+      activated: false,
+    },
   ];
 
   const expected = [
     {
       id: "100",
       price: 100,
-      activated: true
+      activated: true,
     },
     {
       id: "100",
       price: 50,
-      activated: true
-    }
+      activated: true,
+    },
   ];
 
   expect(getDiscountOne(example)).toStrictEqual(expected);
@@ -212,36 +212,36 @@ Then:
     {
       id: "100",
       price: 100,
-      activated: false
+      activated: false,
     },
     {
       id: "100",
       price: 100,
-      activated: false
+      activated: false,
     },
     {
       id: "100",
       price: 100,
-      activated: false
-    }
+      activated: false,
+    },
   ];
 
   const expected = [
     {
       id: "100",
       price: 100,
-      activated: true
+      activated: true,
     },
     {
       id: "100",
       price: 50,
-      activated: true
+      activated: true,
     },
     {
       id: "100",
       price: 100,
-      activated: false
-    }
+      activated: false,
+    },
   ];
 
   expect(getDiscountOne(example)).toStrictEqual(expected);
